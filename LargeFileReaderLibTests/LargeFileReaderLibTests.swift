@@ -8,7 +8,18 @@
 import Testing
 import LargeFileReaderLib
 
-final class LargeFileReaderLibTests {
+// NOTE: The setup and teardown (init/deinit) is run on start/end of every test function. There seems to be
+// no way to do a setup/teardown for the whole suite, the suite is created/deleted for every function. This
+// means that if the tests are run in parallel, the files are being copied and deleted multiple times, leading
+// to tests failing. Therefore, we run the tests in series.
+//
+// We might be able to run the tests in parallel if we don't delete the files, or if we open the files directly
+// from the bundle.
+//
+// LargeFileReaderLib is basically thread-safe. It only needs the file to not be deleted while it has the file
+// open. We could add an event/callback if the library finds that the file has been removed, for nicer handling.
+
+@Suite("LargeFileReaderLibTests", .serialized) final class LargeFileReaderLibTests {
     
     init() async throws {
         copyTestFiles()
@@ -18,39 +29,43 @@ final class LargeFileReaderLibTests {
         deleteTestFiles()
     }
     
-    @Test func testOpenAndCloseEmptyFile() async throws {
+    @Test @MainActor func testOpenAndCloseEmptyFile() async throws {
         let LargeFileReaderLib = LargeFileReaderLib()
         #expect(LargeFileReaderLib.isOpen == false)
-        LargeFileReaderLib.open(testPathForFile("test_empty.log").path(percentEncoded: false))
+        let openResult = LargeFileReaderLib.open(testPathForFile("test_empty.log").path(percentEncoded: false))
+        try #require(openResult == true)
         #expect(LargeFileReaderLib.isOpen == true)
         LargeFileReaderLib.close()
         #expect(LargeFileReaderLib.isOpen == false)
     }
     
-    @Test func testOpenAndCloseSmallFile() async throws {
+    @Test @MainActor func testOpenAndCloseSmallFile() async throws {
         let LargeFileReaderLib = LargeFileReaderLib()
         #expect(LargeFileReaderLib.isOpen == false)
-        LargeFileReaderLib.open(testPathForFile("test_small.log").path(percentEncoded: false))
+        let openResult = LargeFileReaderLib.open(testPathForFile("test_small.log").path(percentEncoded: false))
+        try #require(openResult == true)
         #expect(LargeFileReaderLib.isOpen == true)
         LargeFileReaderLib.close()
         #expect(LargeFileReaderLib.isOpen == false)
     }
     
-    @Test func testOpenAndCloseLargeFile() async throws {
+    @Test @MainActor func testOpenAndCloseLargeFile() async throws {
         let LargeFileReaderLib = LargeFileReaderLib()
         #expect(LargeFileReaderLib.isOpen == false)
-        LargeFileReaderLib.open(testPathForFile("test_large.log").path(percentEncoded: false))
+        let openResult = LargeFileReaderLib.open(testPathForFile("test_large.log").path(percentEncoded: false))
+        try #require(openResult == true)
         #expect(LargeFileReaderLib.isOpen == true)
         LargeFileReaderLib.close()
         #expect(LargeFileReaderLib.isOpen == false)
     }
     
-    @Test func testOpenAndReadSmallFile() async throws {
+    @Test @MainActor func testOpenAndReadSmallFile() async throws {
         let LargeFileReaderLib = LargeFileReaderLib()
         #expect(LargeFileReaderLib.isOpen == false)
         
         // test_small.log contains text-only and is 24548 bytes long.
-        LargeFileReaderLib.open(testPathForFile("test_small.log").path(percentEncoded: false))
+        let openResult = LargeFileReaderLib.open(testPathForFile("test_small.log").path(percentEncoded: false))
+        try #require(openResult == true)
         #expect(LargeFileReaderLib.isOpen == true)
         
         let buffer: UnsafeMutablePointer<UInt8> = UnsafeMutablePointer<UInt8>.allocate(capacity: 65536)
@@ -171,12 +186,13 @@ final class LargeFileReaderLibTests {
         #expect(LargeFileReaderLib.isOpen == false)
     }
     
-    @Test func testOpenAndReadLargeFileLargeBlocks() async throws {
+    @Test @MainActor func testOpenAndReadLargeFileLargeBlocks() async throws {
         let LargeFileReaderLib = LargeFileReaderLib()
         #expect(LargeFileReaderLib.isOpen == false)
         
         // test_large.log contains text-only and is 7626904 bytes long.
-        LargeFileReaderLib.open(testPathForFile("test_large.log").path(percentEncoded: false))
+        var openResult = LargeFileReaderLib.open(testPathForFile("test_large.log").path(percentEncoded: false))
+        try #require(openResult == true)
         #expect(LargeFileReaderLib.isOpen == true)
         
         // Create a buffer that can hold the whole file (7626904) but is also a multiple of cacheBlockSize, so that it for
@@ -246,8 +262,8 @@ final class LargeFileReaderLibTests {
         LargeFileReaderLib.close()
         #expect(LargeFileReaderLib.isOpen == false)
         
-        // test_large.log contains text-only and is 7626904 bytes long.
-        LargeFileReaderLib.open(testPathForFile("test_large.log").path(percentEncoded: false), cacheMaxSize: 3 * LargeFileReaderLib.cacheDefaultBlockSize, cacheBlockSize: LargeFileReaderLib.cacheDefaultBlockSize)
+        openResult = LargeFileReaderLib.open(testPathForFile("test_large.log").path(percentEncoded: false), cacheMaxSize: 3 * LargeFileReaderLib.cacheDefaultBlockSize, cacheBlockSize: LargeFileReaderLib.cacheDefaultBlockSize)
+        try #require(openResult == true)
         #expect(LargeFileReaderLib.isOpen == true)
         
         // Read full 3 blocks
@@ -304,7 +320,7 @@ final class LargeFileReaderLibTests {
         #expect(LargeFileReaderLib.isOpen == false)
     }
     
-    @Test func testOpenAndReadLargeFileSmallBlocks() async throws {
+    @Test @MainActor func testOpenAndReadLargeFileSmallBlocks() async throws {
         
         let cacheBlockSize = 4096
         
@@ -312,7 +328,8 @@ final class LargeFileReaderLibTests {
         #expect(LargeFileReaderLib.isOpen == false)
         
         // test_large.log contains text-only and is 7626904 bytes long.
-        LargeFileReaderLib.open(testPathForFile("test_large.log").path(percentEncoded: false), cacheMaxSize: 1048576, cacheBlockSize: cacheBlockSize)
+        var openResult = LargeFileReaderLib.open(testPathForFile("test_large.log").path(percentEncoded: false), cacheMaxSize: 1048576, cacheBlockSize: cacheBlockSize)
+        try #require(openResult == true)
         #expect(LargeFileReaderLib.isOpen == true)
 
         // Buffer of 64Kb is more than large enough
@@ -380,7 +397,8 @@ final class LargeFileReaderLibTests {
         #expect(LargeFileReaderLib.isOpen == false)
         
         // test_large.log contains text-only and is 7626904 bytes long.
-        LargeFileReaderLib.open(testPathForFile("test_large.log").path(percentEncoded: false), cacheMaxSize: 3 * cacheBlockSize, cacheBlockSize: cacheBlockSize)
+        openResult = LargeFileReaderLib.open(testPathForFile("test_large.log").path(percentEncoded: false), cacheMaxSize: 3 * cacheBlockSize, cacheBlockSize: cacheBlockSize)
+        try #require(openResult == true)
         #expect(LargeFileReaderLib.isOpen == true)
         
         // Read full 3 blocks
