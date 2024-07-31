@@ -1,0 +1,266 @@
+Jul 24 00:07:36 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 00:23:35 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 00:39:34 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 00:39:34 KacBoom syslogd[540]: Configuration Notice:
+	ASL Module "com.apple.cdscheduler" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Jul 24 00:39:34 KacBoom syslogd[540]: Configuration Notice:
+	ASL Module "com.apple.install" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Jul 24 00:39:34 KacBoom syslogd[540]: Configuration Notice:
+	ASL Module "com.apple.authd" sharing output destination "/var/log/asl" with ASL Module "com.apple.asl".
+	Output parameters from ASL Module "com.apple.asl" override any specified in ASL Module "com.apple.authd".
+Jul 24 00:39:34 KacBoom syslogd[540]: Configuration Notice:
+	ASL Module "com.apple.authd" sharing output destination "/var/log/system.log" with ASL Module "com.apple.asl".
+	Output parameters from ASL Module "com.apple.asl" override any specified in ASL Module "com.apple.authd".
+Jul 24 00:39:34 KacBoom syslogd[540]: Configuration Notice:
+	ASL Module "com.apple.authd" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Jul 24 00:39:34 KacBoom syslogd[540]: Configuration Notice:
+	ASL Module "com.apple.eventmonitor" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Jul 24 00:39:34 KacBoom syslogd[540]: Configuration Notice:
+	ASL Module "com.apple.mail" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Jul 24 00:39:34 KacBoom syslogd[540]: Configuration Notice:
+	ASL Module "com.apple.performance" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Jul 24 00:39:34 KacBoom syslogd[540]: Configuration Notice:
+	ASL Module "com.apple.iokit.power" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Jul 24 00:39:34 KacBoom syslogd[540]: Configuration Notice:
+	ASL Module "com.apple.contacts.ContactsAutocomplete" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Jul 24 00:39:34 KacBoom syslogd[540]: Configuration Notice:
+	ASL Module "com.apple.mkb" sharing output destination "/private/var/log/keybagd.log" with ASL Module "com.apple.mkb.internal".
+	Output parameters from ASL Module "com.apple.mkb.internal" override any specified in ASL Module "com.apple.mkb".
+Jul 24 00:39:34 KacBoom syslogd[540]: Configuration Notice:
+	ASL Module "com.apple.mkb" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Jul 24 00:39:34 KacBoom syslogd[540]: Configuration Notice:
+	ASL Module "com.apple.MessageTracer" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Jul 24 00:56:50 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 01:12:51 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 01:23:33 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 01:33:58 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 01:49:10 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 02:07:02 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 02:18:12 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 02:34:58 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 02:51:50 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 03:08:46 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 03:26:13 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 03:36:28 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 03:49:42 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 04:06:49 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 04:19:04 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 04:33:42 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 04:46:35 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 05:09:36 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 05:25:39 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 05:35:58 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 05:49:58 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 06:04:58 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 06:19:58 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 06:34:49 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 06:52:28 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 07:10:26 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 07:22:48 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 07:35:23 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 07:49:25 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 08:02:40 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 08:28:48 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 08:41:46 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 08:54:38 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 09:07:09 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 09:17:48 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 09:30:26 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 09:52:46 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 10:09:25 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 10:31:22 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 10:43:36 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 10:57:11 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 11:07:23 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 11:20:34 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 11:31:40 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 11:56:10 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 12:08:39 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 12:22:12 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 12:34:43 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 12:40:39 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1000
+Jul 24 12:40:39 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1000
+Jul 24 12:40:53 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1001
+Jul 24 12:40:53 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1001
+Jul 24 12:40:59 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1002
+Jul 24 12:40:59 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1002
+Jul 24 12:41:07 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1003
+Jul 24 12:41:07 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1003
+Jul 24 12:42:43 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1004
+Jul 24 12:42:43 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1004
+Jul 24 12:44:20 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1005
+Jul 24 12:44:20 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1005
+Jul 24 12:44:45 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 12:47:51 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1006
+Jul 24 12:47:51 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1006
+Jul 24 12:49:47 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1007
+Jul 24 12:49:47 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1007
+Jul 24 12:49:57 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1008
+Jul 24 12:49:57 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1008
+Jul 24 12:53:02 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1009
+Jul 24 12:53:02 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1009
+Jul 24 12:54:42 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1010
+Jul 24 12:54:42 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1010
+Jul 24 12:55:04 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 12:58:17 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1011
+Jul 24 12:58:17 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1011
+Jul 24 12:59:54 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1012
+Jul 24 12:59:54 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1012
+Jul 24 13:02:42 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1013
+Jul 24 13:02:42 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1013
+Jul 24 13:03:24 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1014
+Jul 24 13:03:24 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1014
+Jul 24 13:05:06 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1015
+Jul 24 13:05:06 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1015
+Jul 24 13:05:06 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 13:08:01 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1016
+Jul 24 13:08:01 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1016
+Jul 24 13:08:37 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1017
+Jul 24 13:08:37 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1017
+Jul 24 13:13:26 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1018
+Jul 24 13:13:26 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1018
+Jul 24 13:13:50 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1019
+Jul 24 13:13:50 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1019
+Jul 24 13:14:03 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1020
+Jul 24 13:14:03 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1020
+Jul 24 13:15:13 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 13:15:30 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1021
+Jul 24 13:15:30 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1021
+Jul 24 13:19:03 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1022
+Jul 24 13:19:03 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1022
+Jul 24 13:20:42 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1023
+Jul 24 13:20:42 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1023
+Jul 24 13:24:12 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1024
+Jul 24 13:24:12 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1024
+Jul 24 13:25:57 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1025
+Jul 24 13:25:57 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1025
+Jul 24 13:25:57 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 13:29:22 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1026
+Jul 24 13:29:22 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1026
+Jul 24 13:30:12 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1027
+Jul 24 13:30:12 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1027
+Jul 24 13:34:31 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1028
+Jul 24 13:34:31 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1028
+Jul 24 13:35:00 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1029
+Jul 24 13:35:00 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1029
+Jul 24 13:37:28 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 13:39:21 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1030
+Jul 24 13:39:21 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1030
+Jul 24 13:39:44 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1031
+Jul 24 13:39:44 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1031
+Jul 24 13:40:14 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1032
+Jul 24 13:40:14 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1032
+Jul 24 13:40:40 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1033
+Jul 24 13:40:40 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1033
+Jul 24 13:44:25 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1034
+Jul 24 13:44:25 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1034
+Jul 24 13:44:55 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1035
+Jul 24 13:44:55 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1035
+Jul 24 13:45:27 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1036
+Jul 24 13:45:27 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1036
+Jul 24 13:48:45 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 13:50:07 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1037
+Jul 24 13:50:07 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1037
+Jul 24 13:50:36 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1038
+Jul 24 13:50:36 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1038
+Jul 24 13:54:51 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1039
+Jul 24 13:54:51 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1039
+Jul 24 13:55:20 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1040
+Jul 24 13:55:20 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1040
+Jul 24 13:55:49 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1041
+Jul 24 13:55:49 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1041
+Jul 24 13:55:59 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1042
+Jul 24 13:55:59 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1042
+Jul 24 13:56:11 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1043
+Jul 24 13:56:11 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1043
+Jul 24 13:56:21 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1044
+Jul 24 13:56:21 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1044
+Jul 24 13:58:56 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 14:00:36 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1045
+Jul 24 14:00:36 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1045
+Jul 24 14:00:59 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1046
+Jul 24 14:00:59 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1046
+Jul 24 14:05:17 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1047
+Jul 24 14:05:17 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1047
+Jul 24 14:05:40 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1048
+Jul 24 14:05:40 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1048
+Jul 24 14:09:48 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 14:10:28 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1049
+Jul 24 14:10:28 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1049
+Jul 24 14:10:52 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1050
+Jul 24 14:10:52 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1050
+Jul 24 14:11:02 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1051
+Jul 24 14:11:02 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1051
+Jul 24 14:11:17 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1052
+Jul 24 14:11:17 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1052
+Jul 24 14:13:20 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1053
+Jul 24 14:13:20 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1053
+Jul 24 14:16:00 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1054
+Jul 24 14:16:00 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1054
+Jul 24 14:16:14 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1055
+Jul 24 14:16:14 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1055
+Jul 24 14:17:45 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1056
+Jul 24 14:17:45 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1056
+Jul 24 14:18:23 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1057
+Jul 24 14:18:23 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1057
+Jul 24 14:21:17 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1058
+Jul 24 14:21:17 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1058
+Jul 24 14:21:17 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 14:21:46 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1059
+Jul 24 14:21:46 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1059
+Jul 24 14:23:00 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1060
+Jul 24 14:23:00 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1060
+Jul 24 14:28:14 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1061
+Jul 24 14:28:14 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1061
+Jul 24 14:29:05 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1062
+Jul 24 14:29:05 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1062
+Jul 24 14:31:56 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 14:32:05 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1063
+Jul 24 14:32:05 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1063
+Jul 24 14:33:21 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1064
+Jul 24 14:33:21 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1064
+Jul 24 14:34:24 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1065
+Jul 24 14:34:24 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1065
+Jul 24 14:38:32 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1066
+Jul 24 14:38:32 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1066
+Jul 24 14:42:08 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 14:42:25 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1067
+Jul 24 14:42:25 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1067
+Jul 24 14:43:42 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1068
+Jul 24 14:43:42 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1068
+Jul 24 14:45:13 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1069
+Jul 24 14:45:13 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1069
+Jul 24 14:45:26 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1070
+Jul 24 14:45:26 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1070
+Jul 24 14:45:34 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1071
+Jul 24 14:45:34 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1071
+Jul 24 14:45:46 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1072
+Jul 24 14:45:46 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1072
+Jul 24 14:48:07 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1073
+Jul 24 14:48:07 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1073
+Jul 24 14:48:51 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1074
+Jul 24 14:48:51 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1074
+Jul 24 14:52:51 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1075
+Jul 24 14:52:51 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1075
+Jul 24 14:52:51 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 14:54:02 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1076
+Jul 24 14:54:02 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1076
+Jul 24 14:58:39 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1077
+Jul 24 14:58:39 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1077
+Jul 24 14:59:16 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1078
+Jul 24 14:59:16 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1078
+Jul 24 15:04:29 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1079
+Jul 24 15:04:29 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1079
+Jul 24 15:04:29 KacBoom syslogd[540]: ASL Sender Statistics
+Jul 24 15:09:00 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:_AMMuxedDeviceDisconnected, mux-device:1080
+Jul 24 15:09:00 KacBoom AMPDeviceDiscoveryAgent[1542]: Entered:__thr_AMMuxedDeviceDisconnected, mux-device:1080

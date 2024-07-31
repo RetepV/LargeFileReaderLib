@@ -1,0 +1,12 @@
+//
+//  module.modulemap
+//  module
+//
+//  Created by Peter de Vroomen on 31/07/2024.
+//
+
+module LargeFileReaderLib {
+    header "LargeFileReaderLib.h"
+
+    export *
+}
