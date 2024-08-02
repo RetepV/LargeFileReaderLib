@@ -22,6 +22,7 @@ Donwloaded and tried this sample project:
 https://developer.apple.com/documentation/Swift/CallingAPIsAcrossLanguageBoundaries
 
 But then I found that the accompanying sample project https://developer.apple.com/documentation/Swift/CallingAPIsAcrossLanguageBoundaries does not compile
-anymore since Xcode 14.5. Xcode does not compile the static C++ functions into the `ForestBuilder-Swift.h` anymore for some reason.
+anymore since Xcode 15.4. Xcode does not compile the static C++ functions into the `ForestBuilder-Swift.h` anymore for some reason.
+https://forums.swift.org/t/use-swift-framework-code-in-c-app-missing-swift-h-header/70914/10
 
 So, for now, it seems we need to use a `.mm` wrapper again.
