@@ -9,17 +9,17 @@ This library is useful, but the main reason for developing it was to test Swift 
 
 I started out by reading these:
 
-https://www.swift.org/documentation/cxx-interop/
-https://www.swift.org/documentation/cxx-interop/project-build-setup/#mixing-swift-and-c-using-swift-package-manager
-https://www.swift.org/documentation/cxx-interop/project-build-setup/#mixing-swift-and-c-using-xcode
+* https://www.swift.org/documentation/cxx-interop/
+* https://www.swift.org/documentation/cxx-interop/project-build-setup/#mixing-swift-and-c-using-swift-package-manager
+* https://www.swift.org/documentation/cxx-interop/project-build-setup/#mixing-swift-and-c-using-xcode
 
 Then got into this WWDC session:
 
-https://developer.apple.com/videos/play/wwdc2023/10172/
+* https://developer.apple.com/videos/play/wwdc2023/10172/
 
 Donwloaded and tried this sample project:
 
-https://developer.apple.com/documentation/Swift/CallingAPIsAcrossLanguageBoundaries
+* https://developer.apple.com/documentation/Swift/CallingAPIsAcrossLanguageBoundaries
 
 But then I found that the accompanying sample project https://developer.apple.com/documentation/Swift/CallingAPIsAcrossLanguageBoundaries does not compile
 anymore since Xcode 15.4. Xcode does not compile the static C++ functions into the `ForestBuilder-Swift.h` anymore for some reason.
