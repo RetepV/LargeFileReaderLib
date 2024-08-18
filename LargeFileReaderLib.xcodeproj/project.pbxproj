@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 73;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,8 +26,28 @@
 		0544B7AC2C5A522A00E730C2 /* LargeFileReaderLib.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = LargeFileReaderLib.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		05161C162C66B1DF001C4923 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				include/FixedBlockAllocatedArray.hxx,
+			);
+			target = 0544B77B2C5A4D4B00E730C2 /* LargeFileReaderLib */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		05161C172C66B1DF001C4923 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 0544B7792C5A4D4B00E730C2 /* Sources */;
+			membershipExceptions = (
+				include/FixedBlockAllocatedArray.hxx,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		0544B77E2C5A4D4B00E730C2 /* LargeFileReaderLib */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = LargeFileReaderLib; sourceTree = "<group>"; };
+		0544B77E2C5A4D4B00E730C2 /* LargeFileReaderLib */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (05161C162C66B1DF001C4923 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 05161C172C66B1DF001C4923 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = LargeFileReaderLib; sourceTree = "<group>"; };
 		0544B7952C5A4DB800E730C2 /* LargeFileReaderLibTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = LargeFileReaderLibTests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -146,7 +166,6 @@
 				};
 			};
 			buildConfigurationList = 0544B7772C5A4D4B00E730C2 /* Build configuration list for PBXProject "LargeFileReaderLib" */;
-			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -154,6 +173,7 @@
 				Base,
 			);
 			mainGroup = 0544B7732C5A4D4B00E730C2;
+			preferredProjectObjectVersion = 60;
 			productRefGroup = 0544B77D2C5A4D4B00E730C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

@@ -1,19 +1,22 @@
 //
-//  LargeFileReaderLib.h
+//  LargeFileReader.h
 //  LargeFileReaderLib
 //
 //  Created by Peter de Vroomen on 31/07/2024.
 //
 
+#ifndef LargeFileReader_h
+#define LargeFileReader_h
+
 #import <Foundation/Foundation.h>
 
-//! Project version number for `LargeFileReaderLib`.
-FOUNDATION_EXPORT double LargeFileReaderLibVersionNumber;
+//! Project version number for `LargeFileReader`.
+FOUNDATION_EXPORT double LargeFileReaderVersionNumber;
 
-//! Project version string for `LargeFileReaderLib`.
-FOUNDATION_EXPORT const unsigned char LargeFileReaderLibVersionString[];
+//! Project version string for `LargeFileReader`.
+FOUNDATION_EXPORT const unsigned char LargeFileReaderVersionString[];
 
-@interface LargeFileReaderLib : NSObject
+@interface LargeFileReader : NSObject
 
 @property (nonatomic, readonly) NSInteger cacheDefaultBlockSize;
 @property (nonatomic, readonly) NSInteger cacheDefaultMaxSize;
@@ -35,3 +38,5 @@ FOUNDATION_EXPORT const unsigned char LargeFileReaderLibVersionString[];
 - (NSInteger)read:(unsigned char *)buffer bytes:(NSInteger)numberOfBytes;
 
 @end
+
+#endif /* LargeFileReader_h */

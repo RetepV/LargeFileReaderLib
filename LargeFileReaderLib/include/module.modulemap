@@ -6,7 +6,8 @@
 //
 
 module LargeFileReaderLib {
-    header "LargeFileReaderLib.h"
+    header "LargeFileReader.h"
+    header "LineIndexer.h"
 
     export *
 }

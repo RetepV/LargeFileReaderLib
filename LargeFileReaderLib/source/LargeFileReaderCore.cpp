@@ -1,11 +1,10 @@
 //
-//  LargeFileReaderLib.cpp
+//  LargeFileReaderCore.cpp
 //  LargeFileReaderLib
 //
 //  Created by Peter de Vroomen on 31/07/2024.
 //
 
-#include "LargeFileReaderLibCore.hpp"
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -13,7 +12,9 @@
 #include <sys/stat.h>
 #include <cassert>
 
-LargeFileReaderLibCore::LargeFileReaderLibCore()
+#include "LargeFileReaderCore.hpp"
+
+LargeFileReaderCore::LargeFileReaderCore()
 {
     isOpen = false;
     isEof = false;
@@ -21,17 +22,17 @@ LargeFileReaderLibCore::LargeFileReaderLibCore()
     isBad = false;
 }
 
-LargeFileReaderLibCore::~LargeFileReaderLibCore()
+LargeFileReaderCore::~LargeFileReaderCore()
 {
     
 }
 
-bool LargeFileReaderLibCore::open(std::string fullFilePath)
+bool LargeFileReaderCore::open(std::string fullFilePath)
 {
     return open(fullFilePath, 0, 0);
 }
 
-bool LargeFileReaderLibCore::open(std::string fullFilePath, size_t cacheMaxSize, size_t cacheBlockSize)
+bool LargeFileReaderCore::open(std::string fullFilePath, size_t cacheMaxSize, size_t cacheBlockSize)
 {
     if (isOpen)
     {
@@ -113,7 +114,7 @@ bool LargeFileReaderLibCore::open(std::string fullFilePath, size_t cacheMaxSize,
     return true;
 }
 
-void LargeFileReaderLibCore::close()
+void LargeFileReaderCore::close()
 {
     if (!isOpen)
     {
@@ -133,7 +134,7 @@ void LargeFileReaderLibCore::close()
     isBad = false;
 }
 
-off_t LargeFileReaderLibCore::lseek(off_t offsetInBytes, int whence)
+off_t LargeFileReaderCore::lseek(off_t offsetInBytes, int whence)
 {
     if (!isOpen)
     {
@@ -180,7 +181,7 @@ off_t LargeFileReaderLibCore::lseek(off_t offsetInBytes, int whence)
     return currentFileOffset;
 }
 
-size_t LargeFileReaderLibCore::read(unsigned char *buffer, size_t numberOfBytes)
+size_t LargeFileReaderCore::read(unsigned char* buffer, size_t numberOfBytes)
 {
     if (!isOpen)
     {
@@ -278,7 +279,7 @@ size_t LargeFileReaderLibCore::read(unsigned char *buffer, size_t numberOfBytes)
         }
 
         // Point to the data.
-        unsigned char *cacheBlockPointer = &fileDataBlocks[fileCacheIndex[dataBlockIndex].offsetInFileBuffer];
+        unsigned char* cacheBlockPointer = &fileDataBlocks[fileCacheIndex[dataBlockIndex].offsetInFileBuffer];
         // Copy the data.
         memcpy(&buffer[totalBytesRead], &cacheBlockPointer[offsetInDataBlock], lengthInDataBlock);
         // Adjust current file offset for the next read.
@@ -296,7 +297,7 @@ size_t LargeFileReaderLibCore::read(unsigned char *buffer, size_t numberOfBytes)
     return totalBytesRead;
 }
 
-size_t LargeFileReaderLibCore::fetchDataBlockForIndex(int64_t index)
+size_t LargeFileReaderCore::fetchDataBlockForIndex(int64_t index)
 {
     // Fetch data for an index entry.
     
@@ -374,7 +375,7 @@ size_t LargeFileReaderLibCore::fetchDataBlockForIndex(int64_t index)
         mostRecentlyUsedIndex = index;
     }
 
-    unsigned char *cacheBlockPointer = &fileDataBlocks[fileCacheIndex[index].offsetInFileBuffer];
+    unsigned char* cacheBlockPointer = &fileDataBlocks[fileCacheIndex[index].offsetInFileBuffer];
     
     return ::read(fileDescriptor, cacheBlockPointer, cacheBlockSize);
 }

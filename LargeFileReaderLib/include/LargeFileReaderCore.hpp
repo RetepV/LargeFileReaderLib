@@ -1,25 +1,27 @@
 //
-//  LargeFileReaderLib.hpp
+//  LargeFileReaderCore.hpp
 //  LargeFileReaderLib
 //
 //  Created by Peter de Vroomen on 31/07/2024.
 //
 
-#ifndef LargeFileReaderLib_
-#define LargeFileReaderLib_
+#ifndef LargeFileReaderCore_h
+#define LargeFileReaderCore_h
 
 /* The classes below are exported */
 #pragma GCC visibility push(default)
 
 #include <swift/bridging>
 #include <string>
+#include <stdint.h>
+#include <sys/types.h>
 #include <sys/stat.h>
 
-class LargeFileReaderLibCore
+class LargeFileReaderCore
 {
 public:
     
-    // MARK: - Private consts
+    // MARK: - Public consts
     
     const int cacheDefaultBlockSize = 65536;
     const int cacheDefaultMaxSize = 2097152;
@@ -41,8 +43,8 @@ public:
     
     // MARK: - Public methods
     
-    LargeFileReaderLibCore();
-    ~LargeFileReaderLibCore();
+    LargeFileReaderCore();
+    ~LargeFileReaderCore();
     
     // Sets up the index, creates the cache, opens the file for reading.
     //
@@ -76,7 +78,7 @@ public:
     // the cache and then returned.
     // - This call is synchronous and will block until the data is cached.
     // - Returns the number of bytes actually 'read'.
-    size_t read(unsigned char *buffer, size_t numberOfBytes);
+    size_t read(unsigned char* buffer, size_t numberOfBytes);
     
 private:
     
@@ -115,7 +117,7 @@ private:
     // Index of the file buffers. There are as many entries as fits the file size.
     // However, there might be fewer blocks in the file buffer, and with the index,
     // we can read blocks and remove least recently used blocks when necessary.
-    FileCacheIndexEntry *fileCacheIndex;
+    FileCacheIndexEntry* fileCacheIndex;
     
     // Index to the FileBufferBlockEntry that is the most recently used.
     int64_t mostRecentlyUsedIndex = -1;
@@ -123,7 +125,7 @@ private:
     int64_t leastRecentlyUsedIndex = -1;
 
     // Cache of file data blocks.
-    unsigned char *fileDataBlocks;
+    unsigned char* fileDataBlocks;
 
     // 'Virtual' current offset pointer into the file. Note that this is not the
     // actual read offset of the file's file pointer. It points to the next data
@@ -136,4 +138,4 @@ private:
 };
 
 #pragma GCC visibility pop
-#endif
+#endif /* LargeFileReaderCore_h */
