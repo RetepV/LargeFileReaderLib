@@ -116,40 +116,20 @@ template <class T>
 const T& FixedBlockAllocatedArray<T>::operator [] (size_t index) const
 {
     assert(totalNumberOfAllocatedBlocks >= 1);
-    
+
     uint64_t blockNumberToAccess = index / numberOfEntriesInBlock;
     uint64_t indexInBlockToAccess = index % numberOfEntriesInBlock;
 
-    AllocatedBlockType* blockToAccess = firstBlock;
+    // Do not allocate in a const method. Just check bounds.
+    assert(blockNumberToAccess < totalNumberOfAllocatedBlocks);
 
-    if (blockNumberToAccess >= totalNumberOfAllocatedBlocks)
+    const AllocatedBlockType* blockToAccess = firstBlock;
+    for (uint64_t numberOfIterations = 0; (numberOfIterations < blockNumberToAccess) && (blockToAccess != nullptr); numberOfIterations++)
     {
-        // If the index is beyond what we already have, keep adding blocks at the end until we have enough.
-        // That last block is also the block we want, so we don't have to iterate to find it.
-        while (blockNumberToAccess >= totalNumberOfAllocatedBlocks)
-        {
-            AllocatedBlockType* newBlock = new AllocatedBlockType;
-            newBlock->allocatedBlock = new T[numberOfEntriesInBlock];
-            assert(newBlock->allocatedBlock != nullptr);
-            newBlock->nextBlock = nullptr;
-            newBlock->prevBlock = lastBlock;
-            
-            lastBlock->nextBlock = newBlock;
-            lastBlock = newBlock;
-            
-            totalNumberOfAllocatedBlocks++;
-        }
-        blockToAccess = lastBlock;
+        blockToAccess = blockToAccess->nextBlock;
     }
-    else
-    {
-        for (uint64_t numberOfIterations = 0; (numberOfIterations < blockNumberToAccess) && (blockToAccess != nullptr); numberOfIterations++)
-        {
-            blockToAccess = blockToAccess->nextBlock;
-        }
-    }
-    // This should not happen. Either we extended the array as necessary, or we didn't extend because we already have the block we need.
     assert(blockToAccess != nullptr);
-    
+
     return blockToAccess->allocatedBlock[indexInBlockToAccess];
 }
+
