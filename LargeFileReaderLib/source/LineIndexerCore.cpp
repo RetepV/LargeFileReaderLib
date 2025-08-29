@@ -89,6 +89,8 @@ int LineIndexerCore::indexLinesForFileReader(LargeFileReaderCore* reader)
         {
             // Did not find a line end
             
+            // NOTE: THIS IS DEBUG STUFF TO SILENCE THE COMPILER FOR NOW!
+            hasDataToProcess = true;
         }
         
     }
